@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>书院</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no" />
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+		<meta name="apple-touch-fullscreen" content="yes" />
+		<meta name="apple-mobile-web -app-capable" content="yes">
+		<meta content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0" name="viewport"  />
+		<link rel="stylesheet/less" type="text/css" href="css/public.less" />  
+    <link rel="stylesheet" href="light7/dist/css/light7.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/dateClock.css">
+    <script src="js/less-1.7.0.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/until.js"></script>
+    <script src="js/ui.js"></script>
+    <script type='text/javascript' src='light7/dist/js/light7.min.js' charset='utf-8'></script>
+    <script type="text/javascript" src="light7/dist/js/light7-city-picker.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="page-group">
+    	<!--首页-->
+        <div class="page page-current page-home">
+					<div class="header-pay">
+						<span class="user_avatar">
+        	  	<img src="images/home.png" width="100%" height="100%" />
+        	  </span>
+        	  <h3 class="user_name">张三</h3>
+					</div>
+					<div class="content home-bg-2">
+						<div class="bg-header"></div>
+						<div class="author-inline">
+							<!--<h4>欢迎您加入草莓书院这个大家庭,让我们陪伴您,见证您的成长。花了六个月时间,成为更好的自己。</h4>-->
+							<p>请您认证的填写以下的信息，我们会为您制定合适的课程。</p>
+						</div>
+						<div class="user-info">
+							<ul>
+								<li class="clearFix">
+									<div class="title-img icon-1"></div>
+									<div class="title-text">
+										<span>姓名</span>
+										<div class="item-input">
+											<input type="text" placeholder="您的真实姓名"/>
+										</div>
+									</div>
+								</li>
+								<li class="clearFix">
+									<div class="title-img icon-2"></div>
+									<div class="title-text">
+										<span>性别</span>
+									  <div class="item-input">
+				              <select>
+				                <option>男</option>
+				                <option>女</option>
+				              </select>
+				            </div>
+									</div>
+								</li>
+								<li class="clearFix">
+									<div class="title-img icon-3"></div>
+									<div class="title-text">
+										<span>手机</span>
+										<div class="item-input">
+											<input name="mobile" type="number" placeholder="请填写手机号码" onblur="checkMobile(this)"/>
+										</div>
+									</div>
+								</li>
+								<li class="clearFix">
+									<div class="title-img icon-4"></div>
+									<div class="title-text">
+										<span>验证码</span>
+										<div class="item-input">
+											<input class="input-code" type="text" placeholder="请输入验证码"/>
+											<button id="codeBtn" class="btn-code">获取验证码</button>
+										</div>
+									</div>
+								</li>
+								<li class="clearFix">
+									<div class="title-img icon-5"></div>
+									<div class="title-text">
+										<span>所在地</span>
+										<div class="item-input">
+											<input id='city-picker' type="text" placeholder="请点击选择"/>
+										</div>
+									</div>
+								</li>
+								<li class="clearFix">
+									<div class="title-img icon-6"></div>
+									<div class="title-text">
+										<span>年龄段</span>
+										<div class="item-input">
+				              <select>
+				                <option>20以下</option>
+				                <option>20-30</option>
+				                <option>30-40</option>
+				                <option>40以上</option>
+				              </select>
+				            </div>
+									</div>
+								</li>
+								<li class="clearFix">
+									<div class="title-img icon-7"></div>
+									<div class="title-text">
+										<span>身份</span>
+										<div class="item-input">
+											<select>
+				                <option>公司职员</option>
+				                <option>全职妈妈</option>
+				                <option>学生</option>
+				                <option>编制人员</option>
+				              </select>
+										</div>
+									</div>
+								</li>
+								<li class="clearFix">
+									<div class="title-img icon-7"></div>
+									<div class="title-text">
+										<span>学历</span>
+										<div class="item-input">
+											<select>
+				                <option>高中或以下</option>
+				                <option>大学</option>
+				                <option>硕士</option>
+				                <option>博士</option>
+				              </select>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="btn-style btn-sub">
+		    			<p><a href="javascript:void(0)" id="payTrue" class="button button-big button-fill">提&nbsp;&nbsp;交</a></p>
+		    		</div>
+					</div>
+        </div>
+    </div>
+	</body>
+</html>
+<script src="js/code.js"></script>
+<script type="text/javascript">
+	var isBlock = true;
+	window.onresize = function(){
+		if(isBlock){
+			$(".bg-header,.author-inline").css("display","none"); 
+			isBlock=false;
+		} 
+		else{
+			$(".bg-header,.author-inline").css("display","block");
+			isBlock=true;
+		} 
+	}
+	$("#city-picker").cityPicker({
+    toolbarTemplate: '<header class="bar bar-nav">\
+    <button class="button button-link pull-right close-picker">X</button>\
+    <h1 class="title">请所在地址</h1>\
+    </header>'
+  });
+</script>

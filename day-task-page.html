@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>书院</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no" />
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+		<meta name="apple-touch-fullscreen" content="yes" />
+		<meta name="apple-mobile-web -app-capable" content="yes">
+		<meta content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0" name="viewport"  />
+		<link rel="stylesheet/less" type="text/css" href="css/public.less" />  
+    <link rel="stylesheet" href="light7/dist/css/light7.min.css" />
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/less-1.7.0.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script type='text/javascript' src='light7/dist/js/light7.min.js' charset='utf-8'></script>
+    <script src="js/swiper-3.4.2.jquery.min.js"></script>
+    <style>
+    		@media screen and (max-width: 349px) {
+    			.article-title{ font-size: 15px !important; top: 17% !important;}
+    			 .page-btn button{
+		        	padding: 1px 4px !important;
+		        	border-radius: 2px !important;
+		        	font-size: 12px !important;
+	         }
+    		} 
+    		.swiper-container{
+    			overflow: initial;
+    		}
+        .swiper-slide{
+            background: #fff;
+            width: 80%;
+            height: 90%;
+            margin: 0 3%;
+            border-radius: 10px;
+            box-shadow: 0px 3px 3px rgba(100, 100, 100, 0.1), -3px 0px 3px rgba(100, 100, 100, 0.1), 0px -2px 3px rgba(100, 100, 100, 0.1), 3px 0px 3px rgba(100, 100, 100, 0.1);
+   					-webkit-box-shadow: 0px 3px 3px rgba(100, 100, 100, 0.1), -3px 0px 3px rgba(100, 100, 100, 0.1), 0px -2px 3px rgba(100, 100, 100, 0.1), 3px 0px 3px rgba(100, 100, 100, 0.1);
+        }
+        #slide{
+        	  margin-top: -10%;
+        }
+        .swiper-slide img{
+            width: 80% !important;
+            height: 120px;
+            border: 2px solid #ffd1d1;
+            border-radius: 5px; 
+            z-index: 9999999;
+            margin-left: 10%;
+            margin-top: -25%;
+        }
+        .article-title{
+            width: 80%;
+            position: absolute;
+            font-size: 18px;
+            font-weight: 600;
+            color: #000;
+            left: 10%;
+            top: 15%;
+        }
+        .article-title,.page-num{
+        	margin: 0;
+        }
+        .page-btn{
+        	width: 80%;
+        	position: absolute;
+        	left: 10%;
+        	top: 20%;
+        	padding: 10px 0;
+        }
+        .page-btn button{
+        	border: none;
+        	color: #fff;
+        	padding: 1.5px 5px;
+        	border-radius: 3px;
+        }
+        .ready-yes{
+        	background: #b23636;
+        }
+        .ready-no{
+        	background: #ccc;
+        }
+        .page-text{
+        	overflow-x: hidden;
+        	overflow-y: scroll;
+        	position: absolute;
+        	width: 80%;
+        	height: 66%;
+        	bottom: 3%;
+        	left: 10%;
+        	text-align: left;
+        	color: #999999;
+        	line-height: 28px;
+        }
+        .page-bottom{
+        	width: 100%; height: 50px; position: absolute; left: 0; bottom: 0; background: rgba(245,245,245,0.7); text-align: center; line-height: 50px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;
+        }
+        .page-bottom i{
+        	display: inline-block; position: relative; top: 3px; width: 18px; height: 18px; background: url(images/play.png) no-repeat center center; background-size: 100% 100%;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="page-group" style=" width: 100%; height: 100%;" >
+    	<!--首页-->
+      <div class="page page-current page-home">
+			<div class="home-bg-edu content">
+				<!--顶部-->
+				<div class="bg-header-page">
+					<p class="page-num swiper-pagination"><span id="nowId">1</span>&nbsp;/&nbsp;5</p>
+				</div>
+			  <!--中部-->
+			  <div class="page-box swiper-container">
+			  	<div id="slide" class="swiper-wrapper">
+			        <!-- 轮播图片数量可自行增减 -->
+			        <div class="swiper-slide" data-page=1>
+			            <img src="images/img1.png"/>
+			            <p class="article-title">No.1人性的逆转</p>
+			            <div class="page-btn">
+			            	<button class="ready-yes hidden" value="">已阅读</button>
+			            	<button class="ready-no" value="">未阅读</button>
+			            </div>
+			            <div class="page-text">的说法尽量快点撒尽量快点撒法艰苦啦就是机开绿灯撒附件；卢卡斯酒店开了房距离喀什酱豆腐家里的刷卡积分了喀什灯笼裤飞机是的卡拉尽量快点撒法金克拉撒旦解放了卡死了肯定就离开啊是尽快立法的时间了可见度撒了付款记录卡撒旦解放了科技时代拉克飓风垃圾啊收费的立刻就adsl会计法技术档案立刻解放的思考垃圾了盛大积分拉开僵尸打了看记录卡撒旦解放了卡死了打开房间卢卡斯的建立开放交流空间撒大了就房贷款是垃圾了肯定撒附件lk</div>
+			            <div class="page-bottom">
+			            	阅读文章
+			            	<i></i>
+			            </div>
+			        </div>
+			        <div class="swiper-slide" data-page=2>
+			            <img src="images/img1.png"/>
+			            <p class="article-title">No.2人性的逆转</p>
+			            <div class="page-btn">
+			            	<button class="ready-yes" value="">已阅读</button>
+			            	<button class="ready-no hidden" value="">未阅读</button>
+			            </div>
+			            <div class="page-text">的说法尽量快点撒尽量快点撒法艰苦啦就是机开绿灯撒附件；卢卡斯酒店开了房距离喀什酱豆腐家里的刷卡积分了喀什灯笼裤飞机是的卡拉尽量快点撒法金克拉撒旦解放了卡死了肯定就离开啊是尽快立法的时间了可见度撒了付款记录卡撒旦解放了科技时代拉克飓风垃圾啊收费的立刻就adsl会计法技术档案立刻解放的思考垃圾了盛大积分拉开僵尸打了看记录卡撒旦解放了卡死了打开房间卢卡斯的建立开放交流空间撒大了就房贷款是垃圾了肯定撒附件lk</div>
+			            <div class="page-bottom">
+			            	阅读文章
+			            	<i></i>
+			            </div>
+			        </div>
+			        <div class="swiper-slide" data-page=3>
+			            <img src="images/img1.png"/>
+			            <p class="article-title">No.3人性的逆转</p>
+			            <div class="page-btn">
+			            	<button class="ready-yes" value="">已阅读</button>
+			            	<button class="ready-no" value="">未阅读</button>
+			            </div>
+			            <div class="page-text">的说法尽量快点撒尽量快点撒法艰苦啦就是机开绿灯撒附件；卢卡斯酒店开了房距离喀什酱豆腐家里的刷卡积分了喀什灯笼裤飞机是的卡拉尽量快点撒法金克拉撒旦解放了卡死了肯定就离开啊是尽快立法的时间了可见度撒了付款记录卡撒旦解放了科技时代拉克飓风垃圾啊收费的立刻就adsl会计法技术档案立刻解放的思考垃圾了盛大积分拉开僵尸打了看记录卡撒旦解放了卡死了打开房间卢卡斯的建立开放交流空间撒大了就房贷款是垃圾了肯定撒附件lk</div>
+			            <div class="page-bottom">
+			            	阅读文章
+			            	<i></i>
+			            </div>
+			        </div>
+			        <!-- <div class="slide-bt"></div> -->
+			    </div>
+			    <p class="copyright">版权归草莓书院所有,未经允许禁止转载</p>
+			  </div>
+			</div>
+		</div>
+    </div>
+  </body>
+</html>
+<script type="text/javascript">
+	var mySwiper = new Swiper('.swiper-container', {
+    roundLengths: true, 
+    loop: true,
+    pagination : '.swiper-pagination',
+		paginationType : 'fraction',
+		initialSlide :2,
+		speed:600,
+		slidesPerView:"auto",
+		centeredSlides : true,
+		followFinger : false,
+	})
+</script>

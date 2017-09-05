@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>书院</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no" />
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+		<meta name="apple-touch-fullscreen" content="yes" />
+		<meta name="apple-mobile-web -app-capable" content="yes">
+		<meta content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0" name="viewport"  />
+		<link rel="stylesheet/less" type="text/css" href="css/public.less" />  
+    <link rel="stylesheet" href="light7/dist/css/light7.min.css" />
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css" />
+    <script src="js/less-1.7.0.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script type='text/javascript' src='light7/dist/js/light7.min.js' charset='utf-8'></script>
+  </head>
+  <body>
+    <div class="page page-group">
+		<div class="content study-task">
+		    <header>
+		    	<div></div>
+		    	<span class="book-name">《沉默的大多数》</span>
+		    	<span class="book-author">&nbsp;王小波 / 著</span>
+		    	<span class="book-star">&nbsp;推荐指数:</span>
+		    	<span class="star-num star-1"></span>
+		    </header>
+		    <!--进度条-->
+		    <div class="canvas-content">
+		    	<canvas id="weekWork"></canvas>
+		    	<!--每日任务-->
+					<div class="task-day">
+						<span class="weekday">周一</span>
+						<i class="iconfont icon-pin2selkaobei2"></i>
+						<div class="tag">
+							<i class></i>
+				      <span>CSS气泡框实现</span>
+				      <a class="btn-sign sign-go">已打卡</a>
+				      <a class="btn-sign sign-no hidden">去打卡</a>
+				      <a class="btn-sign sign-ok hidden">去打卡</a>
+						</div>
+					</div>
+		    	<div class="task-day">
+						<span class="weekday">周二</span>
+						<i class="iconfont icon-pin2selkaobei2"></i>
+						<div class="tag">
+							<i class></i>
+				      <span>CSS气泡框实现</span>
+				      <a class="btn-sign sign-go">已打卡</a>
+				      <a class="btn-sign sign-no hidden">去打卡</a>
+				      <a class="btn-sign sign-ok hidden">去打卡</a>
+						</div>
+					</div>
+		    	<div class="task-day">
+						<span class="weekday">周三</span>
+						<i class="iconfont icon-pin2selkaobei2"></i>
+						<div class="tag">
+							<i class></i>
+				      <span>CSS气泡框实现</span>
+				      <a class="btn-sign sign-go">已打卡</a>
+				      <a class="btn-sign sign-no hidden">去打卡</a>
+				      <a class="btn-sign sign-ok hidden">去打卡</a>
+						</div>
+					</div>
+		    	<div class="task-day">
+						<span class="weekday">周四</span>
+						<i class="iconfont icon-pin2selkaobei2"></i>
+						<div class="tag">
+							<i class></i>
+				      <span>CSS气泡框实现</span>
+				      <a class="btn-sign sign-go">已打卡</a>
+				      <a class="btn-sign sign-no hidden">去打卡</a>
+				      <a class="btn-sign sign-ok hidden">去打卡</a>
+						</div>
+					</div>
+		    	<div class="task-day">
+						<span class="weekday">周一</span>
+						<i class="iconfont icon-pin2selkaobei2 i-color"></i>
+						<div class="tag">
+							<i class></i>
+				      <span>CSS气泡框实现</span>
+				      <a class="btn-sign sign-go">已打卡</a>
+				      <a class="btn-sign sign-no hidden">去打卡</a>
+				      <a class="btn-sign sign-ok hidden">去打卡</a>
+						</div>
+					</div>
+		    	<div class="task-day">
+						<span class="weekday">周一</span>
+						<i class="iconfont icon-pin2selkaobei2 i-color"></i>
+						<div class="tag">
+							<i class></i>
+				      <span>CSS气泡框实现</span>
+				      <a class="btn-sign sign-go">已打卡</a>
+				      <a class="btn-sign sign-no hidden">去打卡</a>
+				      <a class="btn-sign sign-ok hidden">去打卡</a>
+						</div>
+					</div>
+		    	<div class="task-day">
+						<span class="weekday">周一</span>
+						<i class="iconfont icon-pin2selkaobei2 i-color"></i>
+						<div class="tag">
+							<i class></i>
+				      <span>CSS气泡框实现</span>
+				      <a class="btn-sign sign-go">已打卡</a>
+				      <a class="btn-sign sign-no hidden">去打卡</a>
+				      <a class="btn-sign sign-ok hidden">去打卡</a>
+						</div>
+					</div>
+		    </div>
+		    <div id="calendar" style="position:absolute; top: 7rem; left: 5%; width: 90%; z-index: 999999; background: #fff;">
+		</div>
+		<footer>
+			<span class="footer-nav nav-active">
+				<p class='iconfont icon-renwu1'></p>
+				<p class="i-text">本周任务</p>
+			</span>
+			<span class="footer-nav">
+				<p class='iconfont icon-renwu'></p>
+				<p class="i-text">教务</p>
+			</span>
+			<span class="footer-nav">
+				<p class='iconfont icon-geren'></p>
+				<p class="i-text">个人中心</p>
+			</span>
+		</footer>
+	</div>		
+  </body>
+</html>
+<script type="text/javascript">
+	//变量初始化
+		var ZRM = {
+			"lightMax": 4 // 当前星期几
+		}
+	$(function(){
+	    var oC = document.getElementById('weekWork');
+	    oC.width = document.body.scrollWidth*4;
+			oC.height = document.body.scrollHeight*2.5;
+		  
+	    var oGC = oC.getContext('2d');
+	    oGC.lineWidth = 8;
+	    var o = document.getElementById("weekWork");
+			var h = o.offsetHeight/4;  //高度
+			var tH = parseInt((h-10))
+			oGC.strokeStyle = "rgb(234,211,211)";
+			oGC.scale(4,4);
+			oGC.beginPath();
+			oGC.moveTo(65,30);
+			oGC.lineTo(65,tH+40);
+			oGC.stroke();
+	   
+	    for(var i=0 ; i<=6; i++){
+	    	 //画空心圆
+		    //开始一个新的绘制路径
+		    oGC.beginPath();
+		    oGC.lineWidth = 4;
+		    //设置弧线的颜色为
+		    var circleS = {
+		        x : 65,    //圆心的x轴坐标值
+		        r : 9     //圆的半径
+		    };
+		    oGC.stroStyle = '#93c1ff';
+		    oGC.fillStyle = "#fff";
+	    	//沿着坐标x=50,半径为10px的圆的顺时针方向绘制弧线
+	    	oGC.arc(circleS.x, i*((tH+50)/8)+30, circleS.r, 0, Math.PI * 2, false);   
+	    	//按照指定的路径绘制弧线
+	    	oGC.stroke();
+	    	oGC.fill();
+	    	oGC.closePath();
+		    var taskDay = document.getElementsByClassName("task-day");
+		    var weekDay = document.getElementsByClassName('weekday');
+	    	taskDay[i].style.top= 0.5*i*((tH+50)/4)+18 + "px";
+	    }
+	    
+		//开始一个新的绘制路径
+	    oGC.beginPath();
+	   
+	    for(var i=0 ; i<ZRM.lightMax; i++){
+	    	 //画实心圆
+		    //开始一个新的绘制路径
+		    oGC.beginPath();
+		    //设置弧线的颜色为
+		    var circleS = {
+		        x : 65,    //圆心的x轴坐标值
+		        r : 7     //圆的半径
+		    };
+		    oGC.fillStyle = "#b23636"
+	    	//沿着坐标x=25,半径为5px的圆的顺时针方向绘制弧线
+	    	oGC.arc(circleS.x, i*((tH+50)/8)+30, circleS.r, 0, Math.PI * 2, false);   
+	    	//按照指定的路径绘制弧线
+	    	oGC.fill();
+	    	oGC.closePath();
+	    }
+	    
+	    //点击切换
+	    $(".footer-nav").unbind().bind("click",function(){
+	    	$(".footer-nav").removeClass("nav-active");
+	    	$(this).addClass('nav-active');
+	    })
+	})    
+</script>
